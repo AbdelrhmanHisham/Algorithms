@@ -12,13 +12,14 @@ vector<int> faliure_fun(string str);
 
 int main()
 {
-    string str{"akjnfajfc"};
-    string pattern{"ak"};
+    string str{"aaac"};
+    string pattern{"aac"};
 
     int num = KMP(str, pattern);
     cout << "single key : " << num << endl;
 
     vector<int> vec = Multi_KMP(str, pattern);
+    // vector<int> vec = faliure_fun(pattern);
 
     for (int i = 0; i < vec.size(); i++)
     {
